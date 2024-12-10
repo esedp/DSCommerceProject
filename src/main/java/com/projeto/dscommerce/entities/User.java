@@ -17,7 +17,7 @@ public class User {
 
     @Column(unique=true)
     private String email;
-    private String fone;
+    private String phone;
     private LocalDate birthDate;
     private String password;
 
@@ -31,7 +31,7 @@ public class User {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.fone = fone;
+        this.phone = fone;
         this.birthDate = birthDate;
         this.password = password;
     }
@@ -61,11 +61,11 @@ public class User {
     }
 
     public String getFone() {
-        return fone;
+        return phone;
     }
 
     public void setFone(String fone) {
-        this.fone = fone;
+        this.phone = fone;
     }
 
     public LocalDate getBirthDate() {
